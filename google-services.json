@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1080413046961",
+    "firebase_url": "https://church-6860e.firebaseio.com",
+    "project_id": "church-6860e",
+    "storage_bucket": "church-6860e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080413046961:android:b42ef1b671a20b57d5fa90",
+        "android_client_info": {
+          "package_name": "com.kerols2020.atfihchurch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080413046961-gi7j1cjvqk82dsgdjlp3n4di1mugio7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atfihchurch",
+            "certificate_hash": "eaeabfbf89b4373c750e6535887c59be42666402"
+          }
+        },
+        {
+          "client_id": "1080413046961-kskcb3us0088l7mgbaf2aumf486qc002.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPQplp8uRlvhrc1q5wHUDWe-s2O7KT1qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080413046961-kskcb3us0088l7mgbaf2aumf486qc002.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

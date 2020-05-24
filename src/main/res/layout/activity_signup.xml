@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/church_background"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Sign Up"
+        android:textSize="48sp"
+        android:textColor="#080809"
+        android:id="@+id/signupText"
+        />
+
+    <EditText
+        android:id="@+id/EmailSignupID"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#080809"
+        android:layout_below="@+id/signupText"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#080809"
+        />
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/userNamesignUpID"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:hint="User name"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#080809"
+        android:gravity="center"
+        android:layout_below="@+id/EmailSignupID"
+        android:textColor="#080809"
+        />
+    <EditText
+        android:id="@+id/passwordSignupID"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#080809"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/userNamesignUpID"
+        android:textColor="#080809"
+        />
+    <EditText
+        android:id="@+id/confirmedpasswordSignupID"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#080809"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/passwordSignupID"
+        android:textColor="#080809"
+        android:hint="Re-Type PassWord"
+        />
+
+    <Button
+        android:id="@+id/SignupButtonID"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Join today"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/confirmedpasswordSignupID"
+        />
+
+    <TextView
+
+        android:id="@+id/SignUphaveAccountID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="I have account"
+        android:textColor="#080809"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/SignupButtonID"
+        android:layout_marginRight="20dp"
+        />
+
+
+</RelativeLayout>

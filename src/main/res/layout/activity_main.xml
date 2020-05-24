@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000"
+    >
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1669182856365767/1147473019">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/churchImageID"
+        android:background="@drawable/church_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mainAdView"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+    <ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/churchList"
+    android:layout_below="@+id/churchImageID"
+    android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        app:menu="@menu/menu"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#fff"
+        android:background="#000"
+        android:padding="20dp"
+       android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addLevel"
+    android:background="#000"
+    >
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/levelAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1669182856365767/2787857740">
+    </com.google.android.gms.ads.AdView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/levelImageID"
+        android:background="@drawable/level_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/levelAdView"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/levelChurchName"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:layout_below="@id/levelImageID"
+        />
+
+    <ListView
+        android:layout_below="@+id/levelChurchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelList"
+        android:layout_marginBottom="80dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenuL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#fff"
+        android:background="#000"
+        android:padding="20dp"
+        />
+
+
+</RelativeLayout>

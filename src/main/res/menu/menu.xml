@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Log Out"
+        android:id="@+id/logOutMenu"
+        android:icon="@drawable/logout"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:title="change password"
+        android:id="@+id/changePasswordMenu"
+        android:icon="@drawable/change_password"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        />
+
+
+    <item
+        android:title="Add"
+        android:id="@+id/Add"
+        android:icon="@drawable/add"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+        android:title="About Us"
+        android:id="@+id/aboutUsMenu"
+        android:icon="@drawable/about_us"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        />
+
+</menu>

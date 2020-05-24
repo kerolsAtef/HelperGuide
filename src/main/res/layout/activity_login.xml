@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/church_background"
+    tools:context=".Login">
+
+        <ScrollView
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/LoginText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="40dp"
+                    android:gravity="center"
+                    android:text="Log In"
+                    android:textColor="#080809"
+                    android:textSize="48sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/EmailLoginID"
+                    android:layout_width="288dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/LoginText"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#080809"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#080809" />
+
+                <EditText
+                    android:id="@+id/passwordLoginID"
+                    android:layout_width="288dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/EmailLoginID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#080809"
+                    android:textColor="#080809"
+                    />
+
+                <Button
+                    android:id="@+id/LoginButtonID"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/passwordLoginID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Log In"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/LoginhaveAccountID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LoginButtonID"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="I don't have account"
+                    android:textColor="#080809"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/forgetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LoginButtonID"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="forget Password"
+                    android:textColor="#080809"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
